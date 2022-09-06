@@ -109,11 +109,21 @@ function sumAll(array) {
   for(i=0; i<array.length; i++){sum+=array[i]};
   return sum;
 }
-
+console.log('test sumall of arr2, should be 4397:', sumAll(arr2));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+let arr3=[2,-1,44,-55,22,221];
 
+function returnAllPositives(array){
+  let arrayreturn=[];
+  for(i=0; i>array.length; i++){let result=array[i];
+    if(array[i]>0){arrayreturn.push(result);}
+  };
+  return arrayreturn;
+}
+console.log('test retur all pos array, should be an array of positives:', returnAllPositives(arr3));
+//STILL WORKING ON THIS,TIME FOR A BREAK
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
