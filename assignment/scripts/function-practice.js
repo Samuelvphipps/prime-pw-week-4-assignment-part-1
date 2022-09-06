@@ -55,7 +55,7 @@ console.log('test of isPositive function for if neg:', isPositive(-2));
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
-// these were already in here? I wrote the other ones tho.
+// these were already in here? I wrote the other ones though.
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -70,16 +70,13 @@ console.log('getLast array value test should say 17:', getLast(array1));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-for (let i=0; i++;)
-{
-  let test = array[i];
-  if (value == test){return true;}
-  else{return false;}
-};
-
+  for (i=0; i<array.length; i++){
+    if(value == array[i]){return true;}
+    else{return false;}
+  };
 }
 //end function and then test
-console.log('test value find', find( 17, array1 ));
+console.log('test value find', find(4, array1));
 
 
 // ----------------------
