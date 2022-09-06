@@ -57,27 +57,34 @@ console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
 // these were already in here? I wrote the other ones though.
 
+//created array for the remaining questions
+let array1=[2, 4, 6, 56, 17];
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast( array ) {
-  if (array.lenth==0){return 'undefined';}
-  return array.pop();
+  if (array.length==0){return 'undefined';}
+;
+let num=array.length-1;
+return array[num];
 }
-let array1=[2, 4, 6, 56, 17];
+
 console.log('getLast array value test should say 17:', getLast(array1));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+console.log(array1);
+array1.push(879);
+console.log(array1);
 function find( value, array ){
-  for (i=0; i<array.length; i++){
-    if(value == array[i]){return true;}
-    else{return false;}
-  };
+  for( i=0; i<array.length; i++){
+    if(array[i]==value){return true;}
+};
+  return false;
 }
 //end function and then test
-console.log('test value find', find(4, array1));
-
+console.log('test value find', find(56, array1));        
 
 // ----------------------
 // Stretch Goals
@@ -85,15 +92,21 @@ console.log('test value find', find(4, array1));
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+for(i=0;i<string.length; i++){
+  if (string.charAt(0)==letter){return true;}
+};
+return false;
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
-
+console.log('isFirstLetter-should say false:', isFirstLetter('b', 'coffee'));
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+let arr2=[3, 5, 1, 66, 4322, 0];
+//Array to test during stretch goals.
+function sumAll(array) {
   let sum = 0
   // TODO: loop to add items
+  for(i=0; i<array.length; i++){sum+=array[i]};
   return sum;
 }
 
