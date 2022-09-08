@@ -129,3 +129,22 @@ console.log('test return all pos array, should be an array of positives:', retur
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+/* problem=Write a function that takes the base and height of a triangle and return its area.
+Notes
+The area of a triangle is: (base * height) / 2
+Don't forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you're really stuck, unlock solutions in the Solutions tab.
+source: https://edabit.com/challenge/3CaszbdZYGN4otQD8*/
+
+let triangle=0;
+
+function triangleArea(base, height){
+  triangle= ((base*height)/2);
+  return triangle;
+}
+
+console.log('test of triangleArea: result should be 15:', triangleArea(5,6));
+
+console.log('test of triangleArea: result should be 250:', triangleArea(10,50));
