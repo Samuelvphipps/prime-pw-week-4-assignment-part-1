@@ -55,14 +55,16 @@ console.log('test of isPositive function for if neg:', isPositive(-2));
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
-// these were already in here? I wrote the other ones though.
+// these were already in here? I wrote the other ones.
 
 //created array for the remaining questions
 let array1=[2, 4, 6, 56, 17];
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast( array ) {
-  if (array.length==0){return 'undefined';}
+  if (array.length==0){
+    return 'undefined';
+  }
 ;
 let num=array.length-1;
 return array[num];
@@ -79,7 +81,9 @@ array1.push(879);
 console.log(array1);
 function find( value, array ){
   for( i=0; i<array.length; i++){
-    if(array[i]==value){return true;}
+    if(array[i]==value){
+      return true;
+    }
 };
   return false;
 }
@@ -93,7 +97,9 @@ console.log('test value find', find(56, array1));
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
 for(i=0;i<string.length; i++){
-  if (string.charAt(0)==letter){return true;}
+  if (string.charAt(0)==letter){
+    return true;
+  }
 };
 return false;
 }
@@ -106,7 +112,9 @@ let arr2=[3, 5, 1, 66, 4322, 0];
 function sumAll(array) {
   let sum = 0
   // TODO: loop to add items
-  for(i=0; i<array.length; i++){sum+=array[i]};
+  for(i=0; i<array.length; i++){
+    sum+=array[i]
+  };
   return sum;
 }
 console.log('test sumall of arr2, should be 4397:', sumAll(arr2));
@@ -118,11 +126,14 @@ console.log(arr3);
 function returnAllPositives(array){
   let arrayreturn=[];
   for(i=0; i<array.length; i++){
-    if(array[i]>0){arrayreturn.push(array[i]);}
+    if(array[i]>0){
+      arrayreturn.push(array[i]);
+    }
   };
   return arrayreturn;
 }
 console.log('test return all pos array, should be an array of positives:', returnAllPositives(arr3));
+
 //
 
 
